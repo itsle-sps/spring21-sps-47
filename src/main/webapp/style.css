@@ -1,0 +1,129 @@
+/* SETUP */
+
+:root {
+    --font-size-small: 1.8rem;
+    --font-size-normal: 2.2rem;
+  
+    --black: #000;
+    --pink: #ff3258;
+    --white: #f0e9f2;
+    --white-1: #e5e5e6da;
+  
+    --container-max-width: 1180px;
+    --line-height-normal: 1.7;
+  
+    --gutter-medium: 6rem;
+    --gutter-normal: 3rem;
+    --gutter-small: 2rem;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: var(--font-size-small);
+    font-family: var(--font-stack);
+    font-weight: 400;
+    color: var(--black);
+    line-height: var(--line-height-normal);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+  
+  .row {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+  }
+
+  @media(max-width: 1340px) {
+    .row {
+        max-width: 1100px;
+    }
+  }
+  
+  @media(max-width: 1240px) {
+    .row {
+        padding: 0 var(--gutter-medium);
+    }
+  }
+  
+  @media(max-width: 600px) {
+    .row {
+        padding: 0 var(--gutter-normal);
+    }
+  }
+  
+  @media(max-width: 600px) {
+    .row {
+        padding: 0 var(--gutter-small);
+    }
+  }
+  
+  /* HEADER */
+  
+  .header {
+    font-size: var(--font-size-normal);
+  }
+  
+  @media(max-width: 500px) {
+    .header {
+        text-align: center;
+    }
+  }
+  
+  
+  /* NAVIGATION */
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--gutter-normal) 0;
+  }
+  
+  .nav__items {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav__item:not(:last-child) {
+    margin-right: var(--gutter-medium);
+  }
+  
+  @media(max-width: 500px) {
+    .nav {
+        justify-content: center;
+    }
+  }
+  
+  @media(max-width: 400px) {
+    .nav__item:not(:last-child) {
+        margin-right: var(--gutter-normal);
+    }
+  }
+  
+  @media(max-width: 300px) {
+    .nav {
+        font-size: var(--font-size-small);
+    }
+  }
+  
+  .nav__link {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s;
+  }
+  
+  .nav__link:hover {
+    color: var(--pink);
+  }
+  
+  .nav__link:hover::after {
+    right: 0;
+    height: 2px;
+    background: var(--pink);
+  }
