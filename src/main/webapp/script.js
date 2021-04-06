@@ -6,6 +6,24 @@ function loadTasks() {
     })
   });
 }
+function createMap() {
+  const map = new google.maps.Map(
+      document.getElementById('map'),
+      {center: {lat: 37.422, lng: -122.084}, zoom: 16});
+
+    const marker = new google.maps.Marker({
+      position: {lat: 37.422, lng: -122.084},
+      map: map,}
+  );
+  
+   const infowindow = new google.maps.InfoWindow({
+    content: "<a href='/chat.html'> <h1>Chat Room </h1></a>",
+  });
+
+   marker.addListener("click", () => {
+    infowindow.open(map, marker);
+  });
+}
 
 /** Creates an element that represents a task, including its delete button. */
 function createTaskElement(task) {
