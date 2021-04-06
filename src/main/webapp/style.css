@@ -214,3 +214,10 @@
   width: 100%;
 } 
 
+#map {
+  border: thin solid black;
+  height: 100vh;
+  width: 100vw;
+  margin-left: 15px;
+  margin-right: 15px;
+}
