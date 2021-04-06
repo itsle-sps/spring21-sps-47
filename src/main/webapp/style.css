@@ -31,6 +31,8 @@
     line-height: var(--line-height-normal);
     background: var(--white);
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
   }
   
   .row {
@@ -157,3 +159,52 @@
     width: 550;
     height: 600;
   }
+
+  #task-list {
+  list-style-type: none;
+}
+
+
+.task span {
+  flex-grow: 1;
+}
+
+.chat-form {
+    display: flex;
+}
+
+.chat-form *:not(:first-child) {
+    margin-left: 1pc;
+}
+
+
+.chat-form .input-box {
+    padding: 1pc;
+    flex: 1;
+}
+
+.chat-form input[type=submit] {
+    padding: 1pc;
+    border-radius: 4px;
+    border: solid 1px black;
+    margin-right: 15px;
+}
+
+.chat-box {
+    flex: 1 1 auto;
+}
+
+.chat-box li {
+    background: #eee;
+    box-shadow: 2px 2px 4px #aaa;
+    padding: 1pc;
+    margin-bottom: 0.75pc;
+    display: flex;
+
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} 

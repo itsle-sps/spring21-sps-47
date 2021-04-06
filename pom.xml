@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.google.sps</groupId>
-  <artifactId>portfolio</artifactId>
+  <artifactId>google-cloud-datastore-todo-list</artifactId>
   <version>1</version>
 
   <properties>
@@ -16,7 +16,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>spring21-sps-47</googleCloudProjectId>
+    <googleCloudProjectId>YOUR_PROJECT_ID_HERE</googleCloudProjectId>
   </properties>
 
   <dependencies>
@@ -27,6 +27,12 @@
       <version>4.0.1</version>
     </dependency>
 
+    <dependency>
+    <groupId>com.google.cloud</groupId>
+    <artifactId>google-cloud-datastore</artifactId>
+    <version>1.104.0</version>
+    </dependency>
+    
     <!-- Jetty -->
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -37,6 +43,27 @@
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
+    </dependency>
+
+    <!-- Datastore -->
+    <dependency>
+      <groupId>com.google.cloud</groupId>
+      <artifactId>google-cloud-datastore</artifactId>
+      <version>1.104.0</version>
+    </dependency>
+
+    <!-- jsoup -->
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+      <version>1.8.3</version>
+    </dependency>
+
+    <!-- Gson -->
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.8.6</version>
     </dependency>
   </dependencies>
 
