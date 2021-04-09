@@ -1,0 +1,29 @@
+{
+  "name": "culchat",
+  "version": "1.0.0",
+  "description": "Real time chat with rooms",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsle-sps/spring21-sps-47.git"
+  },
+  "author": "SPS Team 47",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsle-sps/spring21-sps-47/issues"
+  },
+  "homepage": "https://github.com/itsle-sps/spring21-sps-47#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "expresss": "*",
+    "moment": "^2.29.1",
+    "socket.io": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
