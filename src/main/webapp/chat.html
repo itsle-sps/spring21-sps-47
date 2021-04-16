@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CulChat - Map</title>
+    <link rel="stylesheet" href="./css/index-style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="./img/favicon.png"/>
+
+  </head>
+
+<body class="container" onload="loadTasks()">
+    <div id="task-list" class="chat-box"></div>
+    <form class="chat-form" id="footer" method="POST" action="/new-task">
+        <input type="text" name="title" class="input-box" placeholder="Share your thoughts..." autocomplete="off" />
+        <input type="submit" >
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
